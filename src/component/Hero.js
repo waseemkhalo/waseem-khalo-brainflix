@@ -1,3 +1,5 @@
+
+
 function Hero() {
 
 
@@ -16,7 +18,7 @@ function Hero() {
             </div>
         </div>
 
-    );
-}
+    )
 
+    }
 export default Hero;
