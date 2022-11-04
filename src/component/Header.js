@@ -1,13 +1,17 @@
+import Header from './Header.scss'
+
 function Header() {
 
 
     return (
         <header className="header">
+
             <div className="logo">
-                <img src="../assets/Logo/BrainFlix-logo.svg" alt="brainflix logo" className="logo__image"></img>
+                <img className="logo__image" src="../assets/Logo/BrainFlix-logo.svg" alt="brainflix logo" ></img>
                 <h1 className="logo__title">Brainflix</h1>
             </div>
-            <div className="logo__title" >
+
+            <div className="form__container" >
                 <form className="form">
                     <input className="form__search">
                     </input>
