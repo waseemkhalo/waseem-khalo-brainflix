@@ -1,3 +1,6 @@
+@use './colors' as *;
+
+
 @mixin profile-picture {
     height: 2.25rem;
     width: 2.25rem;
