@@ -1,15 +1,16 @@
 import React from 'react'
 
+
 function CommentsForm() {
 
     return (
         <div className="comment">
             <h3></h3>
             <div>
-                <img src="../assets/images/Mohan-muruge.jpg" alt="profile" />
+                <img class="comment__profle" src="../assets/images/Mohan-muruge.jpg" alt="profile" />
                 <form>
                     <label>Join the conversation</label>
-                    <textarea cplaceholder="comment"></textarea>
+                    <textarea placeholder="comment"></textarea>
                     <button className='comment__button'>Comment</button>
                 </form>
             </div>
