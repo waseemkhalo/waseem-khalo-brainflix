@@ -1,4 +1,6 @@
-import Header from './Header.scss'
+import '../styles/Header.scss'
+import pfp from '../assets/images/Mohan-muruge.jpg'
+import logo from '../assets/Logo/BrainFlix-logo.svg'
 
 function Header() {
 
@@ -7,7 +9,7 @@ function Header() {
         <header className="header">
 
             <div className="logo">
-                <img className="logo__image" src="../assets/Logo/BrainFlix-logo.svg" alt="brainflix logo" ></img>
+                <img className="logo__image" src={logo} alt="brainflix logo" ></img>
                 <h1 className="logo__title">Brainflix</h1>
             </div>
 
@@ -20,7 +22,7 @@ function Header() {
                         </img>
                     </button>
                 </form>
-                <img className="form__profile-picture" alt="profile">
+                <img className="form__profile-picture" src={pfp} alt="profile">
                 </img>
             </div>
         </header>

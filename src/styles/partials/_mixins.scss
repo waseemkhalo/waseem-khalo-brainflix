@@ -1,0 +1,9 @@
+@mixin profile-picture {
+    height: 2.25rem;
+    width: 2.25rem;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: .0063rem;
+    margin-top: 1.25rem;
+    background-color: $mercury;
+}
