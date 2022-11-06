@@ -7,7 +7,7 @@ function CommentsForm() {
         <div className="comment">
             <h3></h3>
             <div>
-                <img class="comment__profle" src="../assets/images/Mohan-muruge.jpg" alt="profile" />
+                <img className="comment__profle" src="../assets/images/Mohan-muruge.jpg" alt="profile" />
                 <form>
                     <label>Join the conversation</label>
                     <textarea placeholder="comment"></textarea>
