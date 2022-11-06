@@ -12,7 +12,7 @@ import './App.scss';
 function App(props) {
 
 const currentVideo = videoData[0];
-// console.log(currentVideo.title)
+const videoComments = currentVideo.comments[0]
 
 
   // const [currentVideo, setCurrentVideo] = useState(videoData[0])
@@ -24,6 +24,7 @@ const currentVideo = videoData[0];
   return (
     <>
       <Header />
+      
       <Hero 
       key={currentVideo.id}
       title={currentVideo.title}
@@ -37,7 +38,14 @@ const currentVideo = videoData[0];
 
       />
       <CommentsForm />
-      <CommentsSection />
+
+      <CommentsSection 
+      key={videoComments.id}
+      name={videoComments.name}
+      comment={videoComments.comment}
+      timestamp={videoComments.timestamp}
+      
+      />
       <Playlist />
     </>
   );

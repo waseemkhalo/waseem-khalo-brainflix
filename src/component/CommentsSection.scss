@@ -1,0 +1,10 @@
+@use '../styles/partials/mixins' as *;
+@use '../styles/partials/fonts' as *;
+@use '../styles/partials/colors' as *;
+
+.comment {
+
+    &__profile-picture {
+        @include profile-picture;
+    }
+}
