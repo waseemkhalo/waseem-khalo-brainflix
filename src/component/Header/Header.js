@@ -1,7 +1,7 @@
-import '../styles/Header.scss'
-import pfp from '../assets/images/Mohan-muruge.jpg'
-import logo from '../assets/Logo/BrainFlix-logo.svg'
-import searchIcon from '../assets/Icons/search.svg'
+import './Header.scss'
+import pfp from '../../assets/images/Mohan-muruge.jpg'
+import logo from '../../assets/Logo/BrainFlix-logo.svg'
+import searchIcon from '../../assets/Icons/search.svg'
 
 function Header() {
 

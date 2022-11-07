@@ -1,8 +1,7 @@
-import Header from './component/Header.js';
-import Hero from './component/Hero.js';
-import CommentsForm from './component/CommentsForm.js';
-import CommentsSection from './component/CommentsSection'
-import Playlist from './component/Playlist'
+import Header from './component/Header/Header.js';
+import Hero from './component/Hero/Hero.js';
+import CommentsSection from './component/CommentSection/CommentsSection.js'
+import Playlist from './component/Playlist/Playlist.js'
 import videoData from './data/video-details.json'
 import React, { useState } from 'react';
 import './App.scss';
@@ -10,46 +9,18 @@ import './App.scss';
 
 function App(props) {
 
-
-
   const [currentVideo, setCurrentVideo] = useState(videoData[0])
-  // const currentVideo = videoData[0];
-  // const videoComments = currentVideo.comments[0]
 
 
   const handleClick = (id) => {
-
+    
     for (let i = 0; i < videoData.length; i++) {
-
       if (videoData[i].id === id) {
         setCurrentVideo(videoData[i]);
-
       }
 
     };
-
-    // setCurrentVideo(videoData[2])
-
-    // console.log('hi')
-    // return; 
-
-
   }
-
-  // function filteredVideos(videoId) {
-  //   // 1. Copy the cars array
-  //   const newVideoData = [...currentVideo];
-
-  //   // 2. Find the item we want to update
-  //   const indexOfVideo = currentVideo.findIndex((video) => videoId === video.id);
-
-  //   // 3. Update the item
-  //   // newCarsArray[indexOfCar].purchased = true; // technically this mutates the original object
-  //   newCarsArray[indexOfCar] = { ...newCarsArray[indexOfCar], purchased: true };
-
-  //   setCars(newCarsArray);
-  // }
-
 
   return (
     <>
@@ -65,16 +36,17 @@ function App(props) {
         image={currentVideo.image}
         likes={currentVideo.likes}
         description={currentVideo.description}
+        comment={currentVideo.comments.comment}
 
 
       />
-      <CommentsForm />
 
       <CommentsSection
-      // key={videoComments.id}
-      // name={videoComments.name}
-      // comment={videoComments.comment}
-      // timestamp={videoComments.timestamp}
+        videoData={videoData}
+        currentCommentId={currentVideo.comments.id}
+        name={currentVideo.comments.name}
+        comment={currentVideo.comments.comment}
+        timestamp={currentVideo.comments.timestamp}
 
 
       />

@@ -1,4 +1,5 @@
 @use './colors' as *;
+@use './fonts' as *;
 
 
 @mixin profile-picture {
@@ -8,4 +9,34 @@
     border-radius: 50%;
     object-position: -.2rem;
     background-color: $mercury;
+}
+
+@mixin button {
+    margin-top: 1rem;
+    padding: .825rem;
+    @include mobile__labels-buttons;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: $brainflix-blue;
+    color: $white;
+    border: none;
+    border-radius: .3125rem;
+}
+
+@mixin flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin form-box {
+    font-family: "avenir";
+    border: .1rem solid $mercury;
+    background-color: $alabaster;
+    border-radius: .3125rem;
+    color: $brainflix-black;
 }

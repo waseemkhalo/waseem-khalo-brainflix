@@ -1,0 +1,75 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/colors' as *;
+
+// &__section {
+
+//     @include tablet {
+//         width: 80%;
+//         margin-left: auto;
+//         margin-right: auto;
+//     }
+
+//     @include desktop {
+//         width: 50%;
+//     }
+// }
+
+// &__section-container {
+//     @include flex-evenly;
+//     border-top: .0625rem solid $mercury;
+//     border-bottom: .0625rem solid $mercury;
+// }
+
+// &__card {
+//     @include flex-column;
+//     width: 83%;
+
+//     @include tablet {
+//         width: 91%;
+//     }
+// }
+
+// &__card-title {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: baseline;
+//     margin-top: 1rem;
+//     margin-bottom: .5rem;
+
+//     @include tablet {
+//         margin-bottom: .25rem;
+//     }
+// }
+
+// &__card-name {
+//     @include moblie__body-copy;
+//     color: $black;
+//     font-weight: 600;
+//     margin: 0;
+
+//     @include tablet {
+//         @include desktop-tablet__body-copy;
+//         font-weight: 600;
+
+//     }
+// }
+
+// &__card-date {
+//     @include moblie__body-copy;
+//     font-size: .75rem;
+//     color: $silver;
+// }
+
+// &__card-text {
+//     font-size: .75rem;
+//     color: $black;
+//     margin-top: 0;
+//     width: 97%;
+
+//     @include tablet {
+//         @include desktop-tablet__body-copy;
+//         margin-bottom: 1.25rem;
+//         width: 87%;
+//     }
+// }
