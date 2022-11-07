@@ -31,6 +31,8 @@ function Hero(props) {
                 <p>{props.description}</p>
                 <p>import # of comments</p>
             </div>
+
+            
         </div>
 
     )
