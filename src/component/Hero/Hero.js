@@ -29,7 +29,7 @@ function Hero(props) {
                         <h3 className="hero__video-channel">By {props.channel}</h3>
                         <h4 className="hero__video-date">{date}</h4>
                     </div>
-                    <div className="hero__video-details-card">
+                    <div className="hero__video-details-card" id="right-box"  >
                         <div className="hero__icons-container">
                             <img className="icon" src={viewsIcon} />
                             <p className="hero__video-content">{props.views}</p>

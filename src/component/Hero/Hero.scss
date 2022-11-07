@@ -21,7 +21,6 @@
     &__video-details{
         display: flex;
         justify-content: space-between;
-        margin-right: 2.5rem;
         border-top: .0625rem solid $mercury;
         border-bottom: .0625rem solid $mercury;
         
@@ -71,4 +70,8 @@
 .icons {
     max-width: 1.5625rem;    
     max-height: 1.5625rem;
+}
+
+#right-box {
+    margin-right: 1.5rem;
 }
