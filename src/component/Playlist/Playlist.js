@@ -6,7 +6,7 @@ function Playlist({handleClick, videoData, currentVideoId }) {
 
     return (
 
-        <div>
+        <aside className='next-video'>
 
             <div className='playlist'>
                 <h1 className='playlist__header'>next videos</h1>
@@ -28,7 +28,7 @@ function Playlist({handleClick, videoData, currentVideoId }) {
 
             </div>
 
-        </div>
+        </aside>
     )
 }
 

@@ -11,6 +11,14 @@
         padding: 2rem
     }
 
+    @include desktop {
+        padding: 1.5rem;
+        position: absolute;
+        top: 48.75rem;
+        right: -.6rem;
+        border-left: .0625rem solid $mercury
+    }
+
     &__header {
         @include mobile__subheader;
         text-transform: uppercase;
@@ -32,7 +40,7 @@
     &__next-video {
         min-width: 7.5rem;
         max-width: 7.5rem;
-        height: 70px;
+        height: 4.375rem;
         object-fit: cover;
         border-radius: 5%;
     }
@@ -61,5 +69,12 @@
             @include desktop-tablet__body-copy;
             margin-top: .625rem;
         }
+    }
+}
+
+.next-videp {
+    
+    @include desktop {
+
     }
 }

@@ -12,6 +12,11 @@
         padding: 1rem 4rem 2rem 4rem;
     }
 
+    @include desktop {
+        padding: 1rem 6rem 2rem 6rem;
+    }
+
+
     &__form {
         @include flex-column;
         width: 83%;
@@ -21,6 +26,7 @@
             align-items: flex-end;
             width: 100%;
         }
+        
 
     }
 
@@ -50,13 +56,14 @@
         padding-bottom: 3.125rem;
         padding-top: .5rem;
         padding-left: .5rem;
+        width: 100%;
 
         @include tablet {
             padding: 0;
             padding-top: .625rem;
             padding-left: .625rem;
-            height: 40px;
-            width: 450px;
+            height: 2.5rem;
+            width: 28.125rem;
         }
     }
 
@@ -64,6 +71,12 @@
 
         @include tablet {
             width: 100%;
+        }
+
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
         }
     }
 
@@ -77,11 +90,16 @@
         @include button;
 
         @include tablet {
-            width: 200px;
-            height: 40px;
+            width: 12.5rem;
+            height: 2.5rem;
             margin-top: 0;
-            transform: translateY(-5px);
+            transform: translateY(-0.3125rem);
             line-height: 1rem;
+        }
+
+        @include desktop {
+            transform: translateY(-0);
+            width: 10rem;
         }
     }
 
@@ -90,7 +108,11 @@
         font-weight: 700;
 
         @include tablet {
-            transform: translateX(-25px);
+            transform: translateX(-1.5625rem);
+        }
+
+        @include desktop {
+            transform: translateX(0rem);
         }
     }
 }

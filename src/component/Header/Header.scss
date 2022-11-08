@@ -11,6 +11,10 @@
         padding: 1rem 2.5rem 1rem 2.5rem;
     }
 
+    @include desktop {
+        padding: 1rem 5rem 1rem 5rem;
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
@@ -29,6 +33,10 @@
 .logo {
     min-height: 1.5625rem;
     min-width: 7.5rem;
+
+    @include desktop {
+        margin-left: 2rem;
+    }
 }
 
 .form {
@@ -47,6 +55,10 @@
 
         @include tablet {
             width: 70%;
+        }
+
+        @include desktop {
+            width: 50%;
         }
     }
 
@@ -67,7 +79,7 @@
         background-repeat: no-repeat;
         text-indent: 1rem;
         padding: 1rem;
-        border: 1px solid $mercury;
+        border: .0625rem solid $mercury;
         background-color: $alabaster;
         height: 1rem;
         font-weight: 400;
@@ -76,8 +88,8 @@
         border-radius: .25rem;
 
         @include tablet {
-            width: 250px;
-            height: 42px;
+            width: 15.625rem;
+            height: 2.625rem;
         }
     }
 

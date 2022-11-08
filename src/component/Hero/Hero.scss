@@ -21,6 +21,11 @@
         @include tablet {
             padding: 1rem 2rem 0 2rem;
         }
+
+        @include desktop {
+            padding: 1rem 6rem 0 6rem;
+            width: 70%;
+        }
     }
 
     &__video-header {
