@@ -1,6 +1,8 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/colors' as *;
+@use '../../styles/partials/breakpoints' as *;
+
 
 .header {
     padding: 1rem;
@@ -11,7 +13,13 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
+
 }
 
 .logo {
@@ -24,8 +32,18 @@
     flex-direction: column;
     width: 100%;
 
+    @include tablet {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
     &__container {
         width: 100%;
+
+        @include tablet {
+            width: 70%;
+        }
     }
 
     &__search-container {
@@ -33,6 +51,10 @@
         align-items: center;
         margin-top: 1rem;
 
+        @include tablet {
+            margin-top: 0;
+
+        }
     }
 
     &__search {
@@ -44,11 +66,15 @@
         border: 1px solid $mercury;
         background-color: $alabaster;
         height: 1rem;
-        width: 100%;
         font-weight: 400;
         width: 83%;
         margin-right: auto;
         border-radius: .25rem;
+
+        @include tablet {
+            width: 250px;
+            height: 42px;
+        }
     }
 
     &__search::placeholder {
@@ -57,11 +83,38 @@
 
     &__profile-picture {
         @include profile-picture;
+        margin-top: 0;
+
+        @include tablet {
+            visibility: hidden;
+            position: absolute;
+        }
+    }
+
+    &__profile-pictures {
+        @include profile-picture;
+        margin-top: 0;
+        visibility: hidden;
+        position: absolute;
+
+        @include tablet {
+            visibility: visible;
+            position: relative;
+            width: 2.5rem;
+            height: 2.5rem;
+        }
     }
 
 
     &__upload-button {
-        @include button
+        @include button;
 
+        @include tablet {
+            margin-top: 0;
+            padding: .7rem;
+            width: 10.5rem;
+            margin-left: 1rem;
+            @include moblie__body-copy;
+        }
     }
 }

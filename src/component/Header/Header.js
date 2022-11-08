@@ -28,9 +28,15 @@ function Header() {
                             Upload
                         </button>
 
+                        <img
+                            className="form__profile-pictures"
+                            src={pfp}
+                            alt="profile">
+                        </img>
+
                     </form>
                 </div>
-                
+
             </div>
 
         </header>
