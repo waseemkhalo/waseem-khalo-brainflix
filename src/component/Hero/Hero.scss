@@ -11,7 +11,12 @@
         object-fit: cover;
 
         @include tablet {
-            object-fit: cover;
+            
+        }
+
+        @include desktop {
+            max-height: 30rem;
+            object-fit: contain ;
         }
     }
 
