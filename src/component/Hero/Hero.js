@@ -43,13 +43,11 @@ function Hero(props) {
 
                 <p className="hero__video-description">{props.description}</p>
 
-
             </div>
-
 
             <CommentsForm />
 
-            
+
         </div>
 
     )

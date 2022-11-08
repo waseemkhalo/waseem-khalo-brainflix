@@ -42,10 +42,6 @@ function App(props) {
 
       <CommentsSection
         currentVideo={currentVideo}
-      // currentCommentId={currentVideo.comments.id}
-      // name={currentVideo.comments.name}
-      // comment={currentVideo.comments.comment}
-      // timestamp={currentVideo.comments.timestamp}
 
 
       />
