@@ -5,9 +5,12 @@
 
 .comment {
 
+    &__container{
+        padding: 1rem;
+    }
 
     &__section {
-
+        
         @include tablet {
             width: 80%;
             margin-left: auto;
@@ -20,6 +23,7 @@
     }
 
     &__section-container {
+        gap: 1rem;
         @include flex-evenly;
         border-top: .0625rem solid $mercury;
         border-bottom: .0625rem solid $mercury;
@@ -29,9 +33,6 @@
         @include flex-column;
         width: 83%;
 
-        @include tablet {
-            width: 91%;
-        }
     }
 
     &__card-title {
@@ -39,43 +40,26 @@
         justify-content: space-between;
         align-items: baseline;
         margin-top: 1rem;
-        margin-bottom: .5rem;
+        margin-bottom: .25rem;
 
-        @include tablet {
-            margin-bottom: .25rem;
-        }
     }
 
     &__card-name {
         @include moblie__body-copy;
-        color: $brainflix-black;
         font-weight: 600;
         margin: 0;
-
-        @include tablet {
-            @include desktop-tablet__body-copy;
-            font-weight: 600;
-
-        }
     }
 
     &__card-date {
         @include moblie__body-copy;
-        font-size: .75rem;
         color: $silver;
         margin: 0;
     }
 
     &__card-text {
-        font-size: .75rem;
-        color: $brainflix-black ;
+        @include moblie__body-copy;
         margin-top: 0;
-        width: 97%;
+        width: 98%;
 
-        @include tablet {
-            @include desktop-tablet__body-copy;
-            margin-bottom: 1.25rem;
-            width: 87%;
-        }
     }
 }

@@ -1,12 +1,14 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/colors' as *;
+@use '../../styles/partials/breakpoints' as *;
+
 
 .playlist {
     padding: 1rem;
 
     &__header {
-        @include mobile__section-header;    
+        @include mobile__section-header;
         text-transform: uppercase;
         color: $silver;
         margin-bottom: 1rem;
@@ -14,17 +16,24 @@
 
     &__next-video-container {
         display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
     }
+
     &__next-video {
-        min-width: 110px;
+        min-width: 7.5rem;
+        max-width: 7.5rem;
         height: 70px;
         object-fit: cover;
         border-radius: 5%;
-        margin-right: 1rem;
     }
 
     &__title {
         margin-top: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 10.625rem;
         @include mobile__subheader;
     }
 
