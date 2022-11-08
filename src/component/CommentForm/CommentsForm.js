@@ -16,8 +16,10 @@ function CommentsForm() {
                 <img className='comment__profile-picture' src={pfp} alt='profile' />
 
                 <form className='comment__form'>
-                    <label htmlFor='comment' className='comment__title'>Join the Conversation</label>
-                    <textarea className='comment__box' placeholder="Add a new comment"></textarea>
+                    <div className='comment__box-container'>
+                        <label htmlFor='comment' className='comment__title'>Join the Conversation</label>
+                        <textarea className='comment__box' placeholder="Add a new comment"></textarea>
+                    </div>
                     <button className='comment__form-submit'>Comment</button>
                 </form>
             </div>

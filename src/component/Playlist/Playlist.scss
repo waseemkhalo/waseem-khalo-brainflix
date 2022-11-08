@@ -7,11 +7,20 @@
 .playlist {
     padding: 1rem;
 
+    @include tablet {
+        padding: 2rem
+    }
+
     &__header {
-        @include mobile__section-header;
+        @include mobile__subheader;
         text-transform: uppercase;
         color: $silver;
         margin-bottom: 1rem;
+
+        @include tablet {
+            @include desktop-tablet__body-copy;
+            font-weight: 700;
+        }
     }
 
     &__next-video-container {
@@ -35,9 +44,22 @@
         white-space: nowrap;
         width: 10.625rem;
         @include mobile__subheader;
+
+        @include tablet {
+            width: 60%;
+            overflow: auto;
+            text-overflow:unset;
+            white-space:unset;
+            margin-bottom: 0;
+        }
     }
 
     &__channel {
         @include moblie__body-copy;
+
+        @include tablet {
+            @include desktop-tablet__body-copy;
+            margin-top: .625rem;
+        }
     }
 }

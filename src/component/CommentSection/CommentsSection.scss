@@ -7,15 +7,13 @@
 
     &__container{
         padding: 1rem;
+
+        @include tablet {
+            padding: 0rem 2rem 0rem 2rem;
+        }
     }
 
     &__section {
-        
-        @include tablet {
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-        }
 
         @include desktop {
             width: 50%;
@@ -27,11 +25,22 @@
         @include flex-evenly;
         border-top: .0625rem solid $mercury;
         border-bottom: .0625rem solid $mercury;
+        padding: .5rem;
+
+        @include tablet {
+            padding: 0;
+        }
+
     }
 
     &__card {
         @include flex-column;
         width: 83%;
+
+        @include tablet {
+            width: 90%;
+        }
+
 
     }
 
@@ -48,18 +57,32 @@
         @include moblie__body-copy;
         font-weight: 600;
         margin: 0;
+
+        @include tablet {
+            @include desktop-tablet__body-copy;
+            font-weight: 600;
+
+        }
     }
 
     &__card-date {
         @include moblie__body-copy;
         color: $silver;
         margin: 0;
+
+        @include tablet {
+            @include desktop-tablet__body-copy;
+        }
     }
 
     &__card-text {
         @include moblie__body-copy;
         margin-top: 0;
         width: 98%;
+
+        @include tablet {
+            @include desktop-tablet__body-copy;
+        }
 
     }
 }
