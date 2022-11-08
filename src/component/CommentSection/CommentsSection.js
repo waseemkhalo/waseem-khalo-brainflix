@@ -4,39 +4,46 @@ import videoData from '../../data/video-details.json'
 
 
 
-function CommentsSection(props) {
+function CommentsSection({ currentVideo }) {
+    console.log(currentVideo.comments[1].timestamp)
 
-const postedComments = videoData.comments;
-console.log(postedComments)
 
-    const options = {
-
-        month: '2-digit',
-        day: '2-digit',
-        year: 'numeric'
-    }
-
-    const timestamp = props.timestamp;
-    const date = new Intl.DateTimeFormat('en-US', options)
-        .format(timestamp)
 
 
     return (
-        // for (i=0;) {
-        //     return; 
-        // }
-        <div></div>
-        // <div className='comment__card'>
-        //     <div className='comment__profile-picture'></div>
-        //     <div>
-        //         <div>
-        //             <h1>{props.name}</h1>
-        //             <h2>{date}</h2>
-        //         </div>
-        //         <p>{props.comment}</p>
-        //     </div>
 
-        // </div>
+
+        <div>
+            {currentVideo.comments.map((postedComments) => {
+
+                const options = {
+
+                    month: '2-digit',
+                    day: '2-digit',
+                    year: 'numeric'
+                }
+
+                const timestamp = postedComments.timestamp;
+                const date = new Intl.DateTimeFormat('en-US', options)
+                    .format(timestamp)
+
+                return <div className='comment__section' key={postedComments.id}>
+                    <div className='comment__section-container'>
+                        <div className='comment__profile-picture'></div>
+                        <div className='comment__card'>
+                            <div className='comment__card-title'>
+                                <h5 className='comment__card-name'>{postedComments.name}</h5>
+                                <h6 className='comment__card-date'>{timestamp}</h6>
+                            </div>
+                            <p className='comment__card-text'>{postedComments.comment}</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            })}
+        </div>
+
     )
 
 

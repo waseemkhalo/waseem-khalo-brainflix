@@ -1,75 +1,81 @@
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/fonts' as *;
 @use '../../styles/partials/colors' as *;
+@use '../../styles/partials/breakpoints' as *;
 
-// &__section {
+.comment {
 
-//     @include tablet {
-//         width: 80%;
-//         margin-left: auto;
-//         margin-right: auto;
-//     }
 
-//     @include desktop {
-//         width: 50%;
-//     }
-// }
+    &__section {
 
-// &__section-container {
-//     @include flex-evenly;
-//     border-top: .0625rem solid $mercury;
-//     border-bottom: .0625rem solid $mercury;
-// }
+        @include tablet {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-// &__card {
-//     @include flex-column;
-//     width: 83%;
+        @include desktop {
+            width: 50%;
+        }
+    }
 
-//     @include tablet {
-//         width: 91%;
-//     }
-// }
+    &__section-container {
+        @include flex-evenly;
+        border-top: .0625rem solid $mercury;
+        border-bottom: .0625rem solid $mercury;
+    }
 
-// &__card-title {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: baseline;
-//     margin-top: 1rem;
-//     margin-bottom: .5rem;
+    &__card {
+        @include flex-column;
+        width: 83%;
 
-//     @include tablet {
-//         margin-bottom: .25rem;
-//     }
-// }
+        @include tablet {
+            width: 91%;
+        }
+    }
 
-// &__card-name {
-//     @include moblie__body-copy;
-//     color: $black;
-//     font-weight: 600;
-//     margin: 0;
+    &__card-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
 
-//     @include tablet {
-//         @include desktop-tablet__body-copy;
-//         font-weight: 600;
+        @include tablet {
+            margin-bottom: .25rem;
+        }
+    }
 
-//     }
-// }
+    &__card-name {
+        @include moblie__body-copy;
+        color: $brainflix-black;
+        font-weight: 600;
+        margin: 0;
 
-// &__card-date {
-//     @include moblie__body-copy;
-//     font-size: .75rem;
-//     color: $silver;
-// }
+        @include tablet {
+            @include desktop-tablet__body-copy;
+            font-weight: 600;
 
-// &__card-text {
-//     font-size: .75rem;
-//     color: $black;
-//     margin-top: 0;
-//     width: 97%;
+        }
+    }
 
-//     @include tablet {
-//         @include desktop-tablet__body-copy;
-//         margin-bottom: 1.25rem;
-//         width: 87%;
-//     }
-// }
+    &__card-date {
+        @include moblie__body-copy;
+        font-size: .75rem;
+        color: $silver;
+        margin: 0;
+    }
+
+    &__card-text {
+        font-size: .75rem;
+        color: $brainflix-black ;
+        margin-top: 0;
+        width: 97%;
+
+        @include tablet {
+            @include desktop-tablet__body-copy;
+            margin-bottom: 1.25rem;
+            width: 87%;
+        }
+    }
+}

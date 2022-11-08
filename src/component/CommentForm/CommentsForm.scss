@@ -13,14 +13,13 @@
 
     &__title {
         @include mobile__section-header;
-        margin-top: 0;
         color: $silver;
         text-transform: uppercase;
     }
 
     &__form-container {
         @include flex-evenly;
-        margin-bottom: 1rem;
+        gap: 1rem;
     }
 
     &__profile-picture {
@@ -29,7 +28,6 @@
 
     &__form-container {
         @include flex-evenly;
-        margin-bottom: 1rem;
     }
 
     &__box {
@@ -49,7 +47,6 @@
     &__form-submit {
         @include button;
     }
-
 
     &__counter {
         @include moblie__body-copy;

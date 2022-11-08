@@ -7,8 +7,6 @@ function Playlist({handleClick, videoData, currentVideoId }) {
     return (
 
         <div>
-            {/* alt="import video picture" */}
-            {/* src={props.image} */}
 
             <div className='playlist'>
                 <h1 className='playlist__header'>next videos</h1>

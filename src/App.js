@@ -13,12 +13,11 @@ function App(props) {
 
 
   const handleClick = (id) => {
-    
+
     for (let i = 0; i < videoData.length; i++) {
       if (videoData[i].id === id) {
         setCurrentVideo(videoData[i]);
       }
-
     };
   }
 
@@ -27,7 +26,7 @@ function App(props) {
       <Header />
 
       <Hero
-        // currentVideo = {currentVideo} 
+        currentVideo = {currentVideo} 
         key={currentVideo.id}
         title={currentVideo.title}
         channel={currentVideo.channel}
@@ -42,11 +41,11 @@ function App(props) {
       />
 
       <CommentsSection
-        videoData={videoData}
-        currentCommentId={currentVideo.comments.id}
-        name={currentVideo.comments.name}
-        comment={currentVideo.comments.comment}
-        timestamp={currentVideo.comments.timestamp}
+        currentVideo={currentVideo}
+      // currentCommentId={currentVideo.comments.id}
+      // name={currentVideo.comments.name}
+      // comment={currentVideo.comments.comment}
+      // timestamp={currentVideo.comments.timestamp}
 
 
       />
