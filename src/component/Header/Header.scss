@@ -126,6 +126,8 @@
 
     &__upload-button {
         @include button;
+        background-image: url('../../assets/Icons/upload.svg');
+        background-position: 5% 50%;
 
         @include tablet {
             margin-top: 0;
