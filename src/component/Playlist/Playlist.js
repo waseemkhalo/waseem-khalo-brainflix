@@ -25,7 +25,6 @@ function Playlist({handleClick, videoData, currentVideoId }) {
                     )
 
                 })}
-
             </div>
 
         </aside>
