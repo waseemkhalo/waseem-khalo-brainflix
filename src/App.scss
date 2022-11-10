@@ -30,12 +30,16 @@ body {
 
 .hero {
     
-
     &__video {
         width: 100%;
         height: 20%;
         object-fit: cover;
         background-color: black;
+
+        @include tablet {
+            max-height: 24rem;
+            object-fit: contain;
+        }
 
         @include desktop {
                     max-height: 30rem;

@@ -94,6 +94,10 @@
             @include desktop-tablet__body-copy;
             font-size: .9063rem;
         }
+
+        @include desktop {
+            padding-right: 1.8rem;
+        }
     }
 
 

@@ -28,7 +28,7 @@
         }
 
         @include desktop {
-            margin-right: 25px
+            margin-right: 1.5625rem;
         }
 
     }
@@ -72,6 +72,8 @@
             height: 2.5rem;
             width: 28.125rem;
         }
+        
+
     }
 
     &__box-container {
@@ -112,6 +114,7 @@
             transform: translateY(0);
             width: 10rem;
             margin-left: auto;
+            margin-right: .5rem;
 
         }
     }

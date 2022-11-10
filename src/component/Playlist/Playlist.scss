@@ -25,7 +25,7 @@
 
         @include tablet {
             @include desktop-tablet__body-copy;
-            font-weight: 700;
+            font-weight: 600;
         }
     }
 
@@ -33,6 +33,10 @@
         display: flex;
         gap: 1rem;
         margin-bottom: 1rem;
+
+        @include desktop {
+            margin-bottom: .25rem;
+        }
     }
 
     &__next-video {
@@ -58,6 +62,10 @@
             white-space:unset;
             margin-bottom: 0;
         }
+
+        @include desktop {
+            width: 70%
+        }
     }
 
     &__channel {
@@ -70,9 +78,3 @@
     }
 }
 
-.next-videp {
-    
-    @include desktop {
-
-    }
-}
