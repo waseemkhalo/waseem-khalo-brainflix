@@ -78,7 +78,7 @@
         @include show-icon;
         @include mobile__labels-buttons;
         font-family: "avenir";
-        text-indent: 1rem;
+        text-indent: 1.5rem;
         padding: 1rem;
         border: .0625rem solid $mercury;
         background-color: $alabaster;
@@ -125,7 +125,6 @@
 
     &__upload-button {
         @include button;
-        @include show-icon;
         background-image: url("../../assets/icons/upload.svg");
 
         @include tablet {

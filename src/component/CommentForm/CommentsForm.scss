@@ -13,7 +13,7 @@
     }
 
     @include desktop {
-        padding: 1rem 6rem 2rem 6rem;
+        padding: 1rem 0rem 2rem 6rem;
     }
 
 
@@ -25,6 +25,10 @@
             flex-direction: row;
             align-items: flex-end;
             width: 100%;
+        }
+
+        @include desktop {
+            margin-right: 25px
         }
 
     }
@@ -46,6 +50,10 @@
 
     &__form-container {
         @include flex-evenly;
+
+        @include desktop {
+            gap: 1.5rem;
+        }
 
     }
 
@@ -87,8 +95,12 @@
 
     &__form-submit {
         @include button;
+        background-image: url('../../assets/icons/add_comment.svg');
+
 
         @include tablet {
+            @include moblie__body-copy;
+
             width: 12.5rem;
             height: 2.5rem;
             margin-top: 0;
@@ -97,8 +109,10 @@
         }
 
         @include desktop {
-            transform: translateY(-0);
+            transform: translateY(0);
             width: 10rem;
+            margin-left: auto;
+
         }
     }
 
@@ -112,6 +126,7 @@
 
         @include desktop {
             transform: translateX(0rem);
+
         }
     }
 }

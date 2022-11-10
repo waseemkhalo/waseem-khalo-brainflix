@@ -34,6 +34,12 @@
         @include tablet {
             padding: 0;
         }
+        
+        @include desktop {
+            gap: 2rem;
+            border-bottom: 0 solid $mercury;
+
+        }
 
     }
 
@@ -76,6 +82,10 @@
 
         @include tablet {
             @include desktop-tablet__body-copy;
+        }
+
+        @include desktop {
+            margin-right: 1rem;
         }
     }
 

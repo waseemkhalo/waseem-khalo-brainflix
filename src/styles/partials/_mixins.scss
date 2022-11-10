@@ -22,6 +22,8 @@
     color: $white;
     border: none;
     border-radius: .3125rem;
+    background-position: 6% 50%;
+    background-repeat: no-repeat;
 }
 
 @mixin flex-evenly {
@@ -44,6 +46,6 @@
 
 
 @mixin show-icon {
-    background-position: 5% 50%;
+    background-position: 6% 50%;
     background-repeat: no-repeat;
 }
