@@ -7,15 +7,13 @@
 .playlist {
     padding: 1rem;
 
+
     @include tablet {
         padding: 2rem
     }
 
     @include desktop {
         padding: 1.5rem;
-        position: absolute;
-        top: 48.75rem;
-        right: -.6rem;
         border-left: .0625rem solid $mercury
     }
 

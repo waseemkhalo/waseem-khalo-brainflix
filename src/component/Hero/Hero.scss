@@ -4,21 +4,6 @@
 @use '../../styles/partials/breakpoints' as *;
 
 .hero {
-    
-    &__video {
-        width: 100%;
-        height: 20%;
-        object-fit: cover;
-
-        @include tablet {
-            
-        }
-
-        @include desktop {
-            max-height: 30rem;
-            object-fit: contain ;
-        }
-    }
 
     &__content-container{
         padding: 1rem 1rem 0 1rem;
@@ -28,8 +13,9 @@
         }
 
         @include desktop {
-            padding: 1rem 6rem 0 6rem;
-            width: 70%;
+            padding: 1rem 0rem 0 6rem;
+            margin-right: 0;
+            width: 100%;
         }
     }
 

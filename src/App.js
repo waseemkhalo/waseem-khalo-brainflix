@@ -25,34 +25,37 @@ function App(props) {
     <>
       <Header />
 
-      <Hero
-        currentVideo = {currentVideo} 
-        key={currentVideo.id}
-        title={currentVideo.title}
-        channel={currentVideo.channel}
-        timestamp={currentVideo.timestamp}
-        views={currentVideo.views}
-        image={currentVideo.image}
-        likes={currentVideo.likes}
-        description={currentVideo.description}
-        comment={currentVideo.comments.comment}
+      <video className="hero__video" poster={currentVideo.image} controls></video>
+      
+      <div className='main'>
 
+        <div className='main__container'>
+          <Hero
+            currentVideo={currentVideo}
+            // key={currentVideo.id}
+            // title={currentVideo.title}
+            // channel={currentVideo.channel}
+            // timestamp={currentVideo.timestamp}
+            // views={currentVideo.views}
+            // image={currentVideo.image}
+            // likes={currentVideo.likes}
+            // description={currentVideo.description}
+            // comment={currentVideo.comments.comment}
+          />
 
-      />
+          <CommentsSection
+            currentVideo={currentVideo}
+          />
+        </div>
 
-      <CommentsSection
-        currentVideo={currentVideo}
-
-
-      />
-      <Playlist
-        handleClick={handleClick}
-        currentVideoId={currentVideo.id}
-        videoData={videoData}
-        title={currentVideo.title}
-        channel={currentVideo.channel}
-      />
-
+        <Playlist
+          handleClick={handleClick}
+          currentVideoId={currentVideo.id}
+          videoData={videoData}
+          title={currentVideo.title}
+          channel={currentVideo.channel}
+        />
+      </div>
 
 
     </>

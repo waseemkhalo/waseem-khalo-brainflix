@@ -74,11 +74,10 @@
     }
 
     &__search {
-        background-image: url('../../assets/Icons/search.svg');
-        background-position: 5% 50%;
+        background-image: url('../../assets/icons/search.svg');
+        @include show-icon;
         @include mobile__labels-buttons;
         font-family: "avenir";
-        background-repeat: no-repeat;
         text-indent: 1rem;
         padding: 1rem;
         border: .0625rem solid $mercury;
@@ -126,8 +125,8 @@
 
     &__upload-button {
         @include button;
-        background-image: url('../../assets/Icons/upload.svg');
-        background-position: 5% 50%;
+        @include show-icon;
+        background-image: url("../../assets/icons/upload.svg");
 
         @include tablet {
             margin-top: 0;
