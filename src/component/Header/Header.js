@@ -2,6 +2,8 @@ import './Header.scss'
 import pfp from '../../assets/images/Mohan-muruge.jpg'
 import logo from '../../assets/logo/BrainFlix-logo.svg'
 import searchIcon from '../../assets/icons/search.svg'
+import { Link, Links } from 'react-router-dom';
+
 
 function Header() {
 
@@ -10,7 +12,8 @@ function Header() {
         <header className="header">
 
             <div className="header__container">
-                <img className="logo" src={logo} alt="brainflix logo" ></img>
+                <Link to={'/'}> <img className="logo" src={logo} alt="brainflix logo" ></img> 
+                </Link>
 
                 <div className="form__container" >
                     <form className="form">
@@ -24,9 +27,10 @@ function Header() {
                             </img>
                         </div>
 
-                        <button className="form__upload-button">
+                       <Link to={'/upload'} > <button className="form__upload-button">
                             Upload
                         </button>
+                        </Link>
 
                         <img
                             className="form__profile-pictures"

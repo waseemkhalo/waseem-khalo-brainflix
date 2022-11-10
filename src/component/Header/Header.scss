@@ -6,6 +6,9 @@
 
 .header {
     padding: 1rem;
+    border-bottom: .0625rem solid $mercury;
+
+
 
     @include tablet {
         padding: 1rem 2.5rem 1rem 2.5rem;
