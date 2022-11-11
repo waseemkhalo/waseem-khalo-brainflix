@@ -1,8 +1,8 @@
 import React from 'react'
 import './Playlist.scss'
 
-function Playlist({handleClick, videoData, currentVideoId }) {
-    const filteredVideos = videoData.filter((vid) => { return vid.id !== currentVideoId })
+function Playlist({handleClick, videoArray, currentVideoId }) {
+    const filteredVideos = videoArray.filter((vid) => { return vid.id !== currentVideoId })
 
     return (
 

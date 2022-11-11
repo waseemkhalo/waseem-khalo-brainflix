@@ -20,7 +20,7 @@ function Hero({currentVideo}) {
 
     return (
         <div className="hero">
-            {/* <video className="hero__video" poster={props.image} controls></video> */}
+
             <div className="hero__content-container">
                 <h2 className="hero__video-header">{currentVideo.title}</h2>
 

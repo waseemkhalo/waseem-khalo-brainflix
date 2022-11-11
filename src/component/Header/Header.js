@@ -12,7 +12,7 @@ function Header() {
         <header className="header">
 
             <div className="header__container">
-                <Link to={'/'}> <img className="logo" src={logo} alt="brainflix logo" ></img> 
+                <Link to={'/'}> <img className="logo" src={logo} alt="brainflix logo" ></img>
                 </Link>
 
                 <div className="form__container" >
@@ -27,7 +27,7 @@ function Header() {
                             </img>
                         </div>
 
-                       <Link to={'/upload'} > <button className="form__upload-button">
+                        <Link to={'/upload'} > <button className="form__upload-button">
                             Upload
                         </button>
                         </Link>
