@@ -3,8 +3,8 @@ import './Playlist.scss'
 import { Link } from 'react-router-dom';
 
 
-function Playlist({handleClick, videoArray, currentVideoId }) {
-    const filteredVideos = videoArray.filter((vid) => { return vid.id !== currentVideoId })
+function Playlist({videoArray, selectedVideoId }) {
+    const filteredVideos = videoArray.filter((vid) => { return vid.id !== selectedVideoId })
 
     return (
 
