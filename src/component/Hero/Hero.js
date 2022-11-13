@@ -2,6 +2,8 @@
 import React from "react";
 import viewsIcon from '../../assets/icons/views.svg'
 import likesIcon from '../../assets/icons/likes.svg'
+import CommentsForm from "../CommentForm/CommentsForm";
+
 import './Hero.scss'
 
 function Hero({currentVideo}) {
@@ -44,6 +46,7 @@ function Hero({currentVideo}) {
 
             </div>
 
+            <CommentsForm />
 
 
 
