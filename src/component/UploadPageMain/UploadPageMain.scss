@@ -9,23 +9,40 @@
     flex-direction: column;
     padding: 1rem;
 
+    @include tablet {
+        padding: 2rem;
+    }
+
     &__page-header {
         @include mobile__page-header;
+
+        @include tablet {
+            @include desktop-tablet__page-header;
+            padding-bottom: 2rem;
+            border-bottom: .0625rem solid $mercury;
+
+        }
     }
 
     &__page-subheader {
         @include mobile__section-header;
         color: $silver;
         text-transform: uppercase;
+
+        @include tablet {
+            font-size: .875rem;
+        }
     }
 
     &__picture {
         width: 100%;
         border-radius: .5rem;
         margin-bottom: 1rem;
-        
+
         @include tablet {
             width: 50%;
+            height: 22vh;
+
         }
     }
 
@@ -36,6 +53,10 @@
         padding-top: .5rem;
         padding-left: .5rem;
         width: 100%;
+
+        @include tablet {
+            margin-bottom: 1.5rem;
+        }
 
     }
 
@@ -49,25 +70,32 @@
 
     }
 
-    &__form {
-        
-
-    }
-
     &__form-button {
         @include button;
         background-image: url("../../assets/icons/publish.svg");
         margin-bottom: 1rem;
 
-        
+        @include tablet {
+            width: 30%;
+            margin-left: 4rem;
+        }
     }
 
     &__form-cancel {
-    
         @include button;
         background-color: transparent;
         color: $brainflix-blue;
         background-image: url("../../assets/icons/publish.svg");
+
+        @include tablet {
+            width: 50%
+        }
+    }
+
+    &__button-container {
+        display: flex;
+        flex-direction: row-reverse;
+        border-top: .0625rem solid $mercury
     }
 
 
@@ -75,5 +103,7 @@
     &__video-title::placeholder {
         color: $brainflix-black;
         font-weight: 400;
+        font-size: .875rem;
+        text-indent: .5rem;
     }
 }
