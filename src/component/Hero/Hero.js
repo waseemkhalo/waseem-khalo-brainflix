@@ -1,6 +1,5 @@
 // import Data from '../data/video-details.json'
 import React from "react";
-import CommentsForm from "../CommentForm/CommentsForm";
 import viewsIcon from '../../assets/icons/views.svg'
 import likesIcon from '../../assets/icons/likes.svg'
 import './Hero.scss'
@@ -45,7 +44,7 @@ function Hero({currentVideo}) {
 
             </div>
 
-            <CommentsForm />
+
 
 
         </div>

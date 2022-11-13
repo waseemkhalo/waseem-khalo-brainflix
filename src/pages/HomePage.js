@@ -1,5 +1,6 @@
 import Hero from '../component/Hero/Hero.js';
 import CommentsSection from '../component/CommentSection/CommentsSection.js'
+import CommentsForm from "../component/CommentForm/CommentsForm";
 import Playlist from '../component/Playlist/Playlist.js'
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -60,6 +61,7 @@ function HomePage() {
                 <div className='main__container'>
                     <Hero currentVideo={currentVideo} />
                     <CommentsSection currentVideo={currentVideo} />
+                    <CommentsForm />
                 </div>
 
                 <Playlist
