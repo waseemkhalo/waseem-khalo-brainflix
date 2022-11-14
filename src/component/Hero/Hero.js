@@ -30,7 +30,7 @@ function Hero({currentVideo}) {
                         <h3 className="hero__video-channel">By {currentVideo.channel}</h3>
                         <h4 className="hero__video-date">{date}</h4>
                     </div>
-                    <div className="hero__video-details-card" id="red"  >
+                    <div className="hero__video-details-card" >
                         <div className="hero__icons-container">
                             <img className="icon" src={viewsIcon} />
                             <p className="hero__video-content">{currentVideo.views}</p>

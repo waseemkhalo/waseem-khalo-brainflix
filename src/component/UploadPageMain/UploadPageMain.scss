@@ -13,6 +13,15 @@
         padding: 2rem;
     }
 
+    &__container {
+
+        @include desktop {
+            display: flex;
+            gap: 2rem;
+            align-items: center
+        }
+    }
+
     &__page-header {
         @include mobile__page-header;
 
@@ -24,6 +33,8 @@
         }
     }
 
+
+
     &__page-subheader {
         @include mobile__section-header;
         color: $silver;
@@ -31,6 +42,19 @@
 
         @include tablet {
             font-size: .875rem;
+        }
+
+        @include desktop {
+            margin: 0;
+        }
+    }
+
+    &__picture-container {
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+            width: 50%;
         }
     }
 
@@ -42,6 +66,11 @@
         @include tablet {
             width: 50%;
             height: 22vh;
+        }
+
+        @include desktop {
+            width: 100%;
+            height: 25vh;
 
         }
     }
@@ -58,6 +87,11 @@
             margin-bottom: 1.5rem;
         }
 
+        @include desktop {
+            padding-bottom: 4rem;
+            margin-bottom: 0;
+        }
+
     }
 
     &__video-title {
@@ -70,6 +104,19 @@
 
     }
 
+    &__form {
+
+        @include desktop {
+            width: 100%
+        }
+    }
+
+    &__form-container {
+        @include desktop {
+            // transform: translateY(-1rem)
+        }
+    }
+
     &__form-button {
         @include button;
         background-image: url("../../assets/icons/publish.svg");
@@ -78,6 +125,10 @@
         @include tablet {
             width: 30%;
             margin-left: 4rem;
+        }
+
+        @include desktop {
+            width: 15%;
         }
     }
 
@@ -89,7 +140,6 @@
         @include button;
         background-color: transparent;
         color: $brainflix-blue;
-        background-image: url("../../assets/icons/publish.svg");
 
         @include tablet {
             width: 50%
