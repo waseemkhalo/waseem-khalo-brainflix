@@ -1,0 +1,183 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/colors' as *;
+@use '../../styles/partials/breakpoints' as *;
+
+
+.upload {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    @include tablet {
+        padding: 2rem;
+    }
+
+    &__container {
+
+        @include desktop {
+            display: flex;
+            gap: 2rem;
+            
+        }
+    }
+
+    &__page-header {
+        @include mobile__page-header;
+        margin-top: 0;
+
+        @include tablet {
+            @include desktop-tablet__page-header;
+            padding-bottom: 2rem;
+            border-bottom: .0625rem solid $mercury;
+
+        }
+    }
+
+
+
+    &__page-subheader {
+        @include mobile__section-header;
+        color: $silver;
+        text-transform: uppercase;
+
+        @include tablet {
+            font-size: .875rem;
+        }
+
+        @include desktop {
+            margin: 0;
+        }
+    }
+
+    &__picture-container {
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+            width: 50%;
+        }
+    }
+
+    &__picture {
+        width: 100%;
+        border-radius: .5rem;
+        margin-bottom: 1rem;
+
+        @include tablet {
+            width: 50%;
+            height: 22vh;
+        }
+
+        @include desktop {
+            width: 100%;
+            height: 25vh;
+
+        }
+    }
+
+    &__description-box {
+        resize: none;
+        @include form-box;
+        padding-bottom: 3.125rem;
+        padding-top: .5rem;
+        padding-left: .5rem;
+        width: 100%;
+
+        @include tablet {
+            margin-bottom: 1.5rem;
+        }
+
+        @include desktop {
+            padding-bottom: 4.2rem;
+            margin-bottom: 0;
+        }
+
+    }
+
+    &__video-title {
+        @include form-box;
+        padding-bottom: .75rem;
+        padding-top: .75rem;
+        padding-left: .5rem;
+        width: 100%;
+        margin-bottom: 1rem;
+
+        @include desktop {
+            margin-bottom: 2rem;
+        }
+
+    }
+
+    &__form {
+
+        @include desktop {
+            width: 100%
+        }
+    }
+
+    &__form-container {
+        
+        @include tablet {
+            border-bottom: .0625rem solid $mercury;
+        }
+
+        @include desktop {
+            border-bottom: 0;
+        }
+    }
+
+    &__form-button {
+        @include button;
+        background-image: url("../../assets/icons/publish.svg");
+        margin-bottom: 1rem;
+
+        @include tablet {
+            width: 30%;
+            margin-left: 4rem;
+        }
+
+        @include desktop {
+            width: 15%;
+        }
+    }
+
+    &__form-button-link {
+        display: contents;
+    }
+
+    &__form-cancel {
+        @include button;
+        background-color: transparent;
+        color: $brainflix-blue;
+
+        @include tablet {
+            width: 50%
+        }
+    }
+
+    &__button-container {
+        display: flex;
+        flex-direction: column;
+        
+
+        @include tablet {
+            flex-direction: row-reverse;
+            margin-top: 1rem;
+        }
+
+        @include desktop {
+            border-top: .0625rem solid $mercury;
+
+        }
+    }
+
+
+    &__description-box::placeholder,
+    &__video-title::placeholder {
+        color: $brainflix-black;
+        font-weight: 400;
+        font-size: .875rem;
+        text-indent: .5rem;
+    }
+}
