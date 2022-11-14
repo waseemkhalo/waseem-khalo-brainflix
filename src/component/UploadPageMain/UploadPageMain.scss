@@ -18,12 +18,13 @@
         @include desktop {
             display: flex;
             gap: 2rem;
-            align-items: center
+            
         }
     }
 
     &__page-header {
         @include mobile__page-header;
+        margin-top: 0;
 
         @include tablet {
             @include desktop-tablet__page-header;
@@ -88,7 +89,7 @@
         }
 
         @include desktop {
-            padding-bottom: 4rem;
+            padding-bottom: 4.2rem;
             margin-bottom: 0;
         }
 
@@ -101,6 +102,10 @@
         padding-left: .5rem;
         width: 100%;
         margin-bottom: 1rem;
+
+        @include desktop {
+            margin-bottom: 2rem;
+        }
 
     }
 
@@ -115,10 +120,10 @@
         
         @include tablet {
             border-bottom: .0625rem solid $mercury;
-
         }
 
         @include desktop {
+            border-bottom: 0;
         }
     }
 
@@ -153,13 +158,17 @@
 
     &__button-container {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column;
+        
 
         @include tablet {
+            flex-direction: row-reverse;
             margin-top: 1rem;
         }
 
         @include desktop {
+            border-top: .0625rem solid $mercury;
+
         }
     }
 
