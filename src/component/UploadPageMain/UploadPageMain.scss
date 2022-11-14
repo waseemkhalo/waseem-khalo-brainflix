@@ -112,8 +112,13 @@
     }
 
     &__form-container {
+        
+        @include tablet {
+            border-bottom: .0625rem solid $mercury;
+
+        }
+
         @include desktop {
-            // transform: translateY(-1rem)
         }
     }
 
@@ -151,11 +156,10 @@
         flex-direction: row-reverse;
 
         @include tablet {
-            border-top: .0625rem solid $mercury;
+            margin-top: 1rem;
         }
 
         @include desktop {
-            margin-top: 1rem;
         }
     }
 
