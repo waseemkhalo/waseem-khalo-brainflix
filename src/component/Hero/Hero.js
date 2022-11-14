@@ -48,8 +48,6 @@ function Hero({currentVideo}) {
 
             <CommentsForm />
 
-
-
         </div>
 
     )
