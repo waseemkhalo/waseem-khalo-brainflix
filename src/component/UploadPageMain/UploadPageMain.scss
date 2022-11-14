@@ -153,6 +153,10 @@
         @include tablet {
             border-top: .0625rem solid $mercury;
         }
+
+        @include desktop {
+            margin-top: 1rem;
+        }
     }
 
 
