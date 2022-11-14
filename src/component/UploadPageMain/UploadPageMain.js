@@ -6,6 +6,10 @@ import { Link } from 'react-router-dom';
 
 
 function UploadPageMain() {
+
+    const handleClick = () => {
+        alert('upload complete')
+      }
     return (
         <div className='upload'>
             <h1 className='upload__page-header'>Upload Video</h1>
@@ -23,7 +27,7 @@ function UploadPageMain() {
             </div>
 
             <div className='upload__button-container'>
-                <Link className='upload__form-button-link' to={'/'}> <button className='upload__form-button'>Publish</button> </Link>
+                <Link onClick={handleClick} className='upload__form-button-link' to={'/'}> <button className='upload__form-button'>Publish</button> </Link>
                 <Link to={'/'}> <button className='upload__form-cancel'>Cancel</button> </Link>
             </div>
         </div>
