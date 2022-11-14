@@ -11,7 +11,7 @@ function UploadPageForm() {
                 <label className='upload__page-subheader' htmlFor='comment'>Add video description</label>
                 <textarea className='upload__description-box' placeholder="Add a description to your video"></textarea>
                 <div className='upload__button-container'>
-                    <button className='upload__form-button'>Publish</button>
+                    <Link className='upload__form-button-link'to={'/'}> <button className='upload__form-button'>Publish</button> </Link>
                     <Link to={'/'}> <button className='upload__form-cancel'>Cancel</button> </Link>
                 </div>
             </form>

@@ -81,6 +81,10 @@
         }
     }
 
+    &__form-button-link {
+        display: contents;
+    }
+
     &__form-cancel {
         @include button;
         background-color: transparent;
@@ -95,7 +99,10 @@
     &__button-container {
         display: flex;
         flex-direction: row-reverse;
-        border-top: .0625rem solid $mercury
+
+        @include tablet {
+            border-top: .0625rem solid $mercury;
+        }
     }
 
 
