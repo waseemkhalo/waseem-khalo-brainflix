@@ -2,7 +2,6 @@ import './App.scss';
 import Header from './component/Header/Header.js';
 import HomePage from './pages/HomePage.js';
 import UploadPage from './pages/UploadPage';
-import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 

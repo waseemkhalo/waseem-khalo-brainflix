@@ -39,6 +39,9 @@ function HomePage() {
             .then(response => {
                 setCurrentVideo(response.data);
             })
+            .catch(error => {
+                console.log(error)
+            })
     }, [selectedVideoId])
 
 

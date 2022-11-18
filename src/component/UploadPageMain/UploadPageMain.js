@@ -18,7 +18,7 @@ function UploadPageMain() {
             <div className='upload__container'>
                 <div className='upload__picture-container'>
                     <h2 className='upload__page-subheader'>Video Thumbnail</h2>
-                    <img className='upload__picture' src={uploadedVideoTemp}></img>
+                    <img className='upload__picture' src={uploadedVideoTemp} alt='upload'></img>
                 </div>
                 <div className='upload__form'>
                     <UploadPageForm />

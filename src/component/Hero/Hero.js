@@ -32,11 +32,11 @@ function Hero({currentVideo}) {
                     </div>
                     <div className="hero__video-details-card" >
                         <div className="hero__icons-container">
-                            <img className="icon" src={viewsIcon} />
+                            <img className="icon" src={viewsIcon} alt='eyeball icon' />
                             <p className="hero__video-content">{currentVideo.views}</p>
                         </div>
                         <div className="hero__icons-container">
-                            <img className="icon" src={likesIcon} />
+                            <img className="icon" src={likesIcon} alt='thumbs up like icon' />
                             <p className="hero__video-content">{currentVideo.likes}</p>
                         </div>
                     </div>
