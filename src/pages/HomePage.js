@@ -6,6 +6,9 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import '../App.scss';
 
+const API_URL = process.env.REACT_APP_API_URL;
+
+
 function HomePage() {
 
     const apiKey = '84c9397b-6dfd-47d0-9b7f-c504666fcbad'
@@ -19,7 +22,7 @@ function HomePage() {
     const selectedVideoId = videoId || defaultVideoId;
 
     useEffect(() => {
-        axios.get(`https://project-2-api.herokuapp.com/videos/?api_key=${apiKey}`)
+        axios.get(`${API_URL}/videos`)
             .then(response => {
                 setVideoArray(response.data)
             
