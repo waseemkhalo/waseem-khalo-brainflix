@@ -35,9 +35,10 @@ function HomePage() {
             return
         }
 
-        axios.get(`https://project-2-api.herokuapp.com/videos/${selectedVideoId}?api_key=${apiKey}`)
+        axios.get(`${API_URL}/videos/${selectedVideoId}`)
             .then(response => {
                 setCurrentVideo(response.data);
+                console.log(response.data)
             })
             .catch(error => {
                 console.log(error)

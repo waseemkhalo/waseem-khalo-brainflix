@@ -4,7 +4,6 @@ import './CommentsSection.scss'
 
 
 function CommentsSection({ currentVideo }) {
-
     return (
 
         <div className='comment__container'>
