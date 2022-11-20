@@ -11,8 +11,6 @@ const API_URL = process.env.REACT_APP_API_URL;
 
 function HomePage() {
 
-    const apiKey = '84c9397b-6dfd-47d0-9b7f-c504666fcbad'
-
     const { videoId } = useParams();
 
     const [videoArray, setVideoArray] = useState([])
@@ -38,7 +36,6 @@ function HomePage() {
         axios.get(`${API_URL}/videos/${selectedVideoId}`)
             .then(response => {
                 setCurrentVideo(response.data);
-                console.log(response.data)
             })
             .catch(error => {
                 console.log(error)
